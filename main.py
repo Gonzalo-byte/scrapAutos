@@ -38,5 +38,6 @@ try:
     print('Exportación completa')
 except:
     print('Error al exportar')
-    
+
+driver.close()
     
