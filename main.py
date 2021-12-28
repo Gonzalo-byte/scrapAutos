@@ -33,8 +33,8 @@ for i in range(23):
     lista_autos.append(auto_data)
 
 try:
-    df = pd.Dataframe(lista_autos, columns = ['Precio', 'Año', 'Km', 'Modelo', 'Localizacion', 'Link'])
-    df.to_excel(f'autos{time.time}.xlsx')
+    df = pd.DataFrame(lista_autos, columns=['precio', 'año', 'km', 'modelo', 'ubicacion', 'link'])
+    df.to_excel('autos.xlsx')
     print('Exportación completa')
 except:
     print('Error al exportar')
